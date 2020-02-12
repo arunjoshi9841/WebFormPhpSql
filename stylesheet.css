@@ -1,0 +1,75 @@
+
+
+#header{
+	background-color:#F73043;
+	font:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif
+	
+	}
+body{
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+
+
+}
+
+
+#mainframe {
+	margin: 0px auto;
+	padding: 0px;
+	border-spacing: 0px;
+	width: 990px;
+    margin-top: 20px;
+	border-top-style: dotted;
+    border-right-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: dotted;
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+h1{
+	color: #FFF;
+}
+
+
+
+#go_back{
+	background-image:url(back.png);
+	width:250px;
+	height:125px;
+}
+
+#sub-button{
+	background-image:url(submit.png);
+	width:100px;
+	height:38px;
+}
+
+#cancelbutton{
+	background-image:url(cancel.png);
+	width:100px;
+	height:38px;
+}
+
+
+
+
+#footer{
+	text-align:right;
+	height:30px;
+	background-color:#E21939;
+	color:#fff;
+}
+#area{
+	width:500px; height:50px;
+}
+

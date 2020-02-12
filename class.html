@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Caldwell University survey form</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+<body>
+<div id =header>
+<center><h1><img src="Capture.JPG" width="394" height="95"  alt=""/></h1>
+<h1>CALDWELL UNIVERSITY COMPUTING AND COMMUNICATION EQUIPMENT SURVEY FORM</h1>
+ 
+</center>
+</div>
+ 
+
+
+<form method="post" id="survey" action="submit.php">
+
+ <div id = "mainframe">
+
+     
+
+<p align="center"><strong>This survey is for a research being carried out by the communications department of caldwell university to understand the communnication habits of millenials.  Please answer all the questions thoughtfully. </strong></p>
+
+ 
+
+<table width="1006" cellpadding="10" cellspacing="10">
+
+
+<tr>
+   <td width="189">Student ID:</td>
+   <td width="180">
+       <input name="studentId" size="20" required>
+   </td>
+
+   <td width="188">
+     Class:
+      <td width="104">
+      <select name="year">
+      <option value="Freshman">Freshman</option>
+      <option value="Sophomore">Sophomore</option>
+      <option value="Junior">junior</option>
+      <option value="Senior">Senior</option>
+      </select>
+
+    <td width="108">
+      <span class="gradyear">Expected graduation Year:</span>
+      <td width="54">
+      <select name="gradyear">
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      </select> </td>
+      
+<tr>
+   <td>Academic Major:</td>
+   <td>
+       <input name="major" size="30" >
+   </td>
+
+   <td>
+     How many social media platform do you use?
+      <td>
+      <select name="socialnumber">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+            </select> </td>
+      </td>
+</tr>
+<tr>
+<td>
+Date of Birth:
+<input name="DOB" type="date" value="2018-01-01">
+<script>
+var dateControl = document.querySelector('input[type="date"]');
+dateControl.value = '2018-01-01';
+</script>
+</td>
+<td>
+  <p>Select your gender:  </p>
+  <p>
+    <input name="gender" type="radio" value="male" >
+    Male
+    
+    <input  name="gender" type="radio" value="female" >
+    Female
+  </p>
+       </td>
+</tr>
+</tr>
+</table>
+<table width="950">
+<tr>
+<td >
+  <p align="center"><strong>Check anything that applies</strong></p>
+  <p>You have Cable, FIOS or SatelliteTV 
+    <input type="checkbox" name="checkbox1" value="yes">
+</p>
+  <p>You have access to high speed internet 
+    <input type="checkbox" name="checkbox2"  value="yes">
+  </p>
+  <p>You own a smartphone 
+    <input type="checkbox" name="checkbox3" value="yes">
+  </p>
+  <p>You have a windows computer 
+    <input type="checkbox" name="checkbox4" value="yes">
+  </p>
+  <p>You have a apple computer 
+    <input type="checkbox" name="checkbox5" value="yes">
+  </p>
+  <p>You use MS office 2016 
+    <input type="checkbox" name="checkbox6" value="yes">
+  </p>
+  <p>You prefer typing than writing by hand.
+    <input type="checkbox" name="checkbox8" value="yes">
+  </p>
+  <p>  You spend more than two hours a day on social media 
+    <input type="checkbox" name="checkbox7" value="yes">
+  </p>
+  <p>You have more than 1000 friends on social media 
+    <input type="checkbox" name="checkbox9" value="yes">
+  </p>
+  <p>You are a member of any club and orgnization? &nbsp;&nbsp;&nbsp;
+    <select name="club">
+      <option value="yes">yes</option>
+      <option value="no">NO</option>
+    </select>
+</p>
+<div>
+  <h4>Which of the following social media tools do you use? (Choose all that apply)</h4>
+  
+          <p>
+            <input name="smedia.1" type="checkbox" value="Twitter" >
+            Twitter
+          </p>
+         <p>
+            <input name="smedia.2" type="checkbox" value="Facebook" >
+            Facebook
+    </p>
+         <p>
+            <input name="smedia.3" type="checkbox" value="Google+" >
+            Google+
+    </p>
+            
+            <p>
+            <input name="smedia.4" type="checkbox" value="Linkedin" >
+           Linkedin
+          </p>
+           <p>
+            <input name="smedia.5" type="checkbox" value="Youtube" >
+            Youtube
+          </p>
+          <p>
+            <input name="smedia.6" type="checkbox" value="Skype" >
+            Skype
+          </p>
+          <p>
+            <input name="smedia.7" type="checkbox" value="Viber" >
+            Viber
+          </p>
+          <p>
+            <input name="smedia.8" type="checkbox" value="Instagram" >
+            Instagram
+  </p>
+</div>    
+        
+  <p>What is your most common activity when using a computer?  (check ONLY ONE)</p>
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr>
+        <td align="left" valign="top" nowrap="nowrap"><input name="MtComAct" type="radio" value="Games">
+          games<br>
+          <input name="MtComAct" type="radio" value="Surfing Internet">
+          surfing the internet<br>
+           <input name="MtComAct" type="radio" value="social network">
+          social network</td>
+          <input name="MtComAct" type="radio" value="Research">
+          research <br>
+         
+        <td align="left" valign="top" nowrap="nowrap">
+        <input name="MtComAct" type="radio" value="word processing">
+          word processing<br>
+          
+          <input name="MtComAct" type="radio" value="email">
+          email
+           <input name="MtComAct" type="radio" value="movies">
+          movies</td>
+          
+      </tr>
+    
+  </table>
+ 
+ 
+
+<table width=950><tr>
+            	<td width> <b>You believe that your phone is a integral part of your life.</td>
+ </tr></table>		
+<table width="85%">
+		
+            <tr>
+	<td width="15%">
+				<input type="radio" name="q1" id="q1" value="5">
+				<label for="q1">Strongly Agree</label>
+			  </td>
+                <td width="15%">
+				<input type="radio" name="q1" id="q1" value="4">
+				<label for="q1">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q1" id="q1" value="3">
+				<label for="q1">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q1" id="q1" value="2">
+				<label for="q1">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q1" id="q1" value="1">
+				<label for="q1">Strongly Disagree</label><br>
+				</td>
+            </tr>
+  </table>
+         <br>
+         <br>
+        
+
+	
+	<table width=950>	<tr>
+            	<td width><b>You like using your smartphone or tablet instead of your computer.</td>
+            </tr></table>		
+
+		<table width="85%">
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q2" id="q2" value="5">
+				<label for="q2">Strongly Agree</label>
+			  </td>
+                <td width="15%">
+				<input type="radio" name="q2" id="q2" value="4">
+				<label for="q2">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q2" id="q2" value="3">
+				<label for="q2">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q2" id="q2" value="2">
+				<label for="q2">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q2" id="q2" value="1">
+				<label for="q2">Strongly Disagree</label><br>
+				</td>
+            </tr>
+  </table>
+         
+ <br>
+         <br>
+
+
+<table width=950><tr>
+            	<td width><b>On the scale of 1 to 5 how much knowledge do you have about the hardwares of your computer.</td>
+ </tr></table>		
+<table width="85%">	
+            <tr>
+	<td width="15%">
+				<input type="radio" name="q3" id="q3" value="5">
+				<label for="q1">5</label></td>
+                <td width="15%">
+				<input type="radio" name="q3" id="q3" value="4">
+				<label for="q1">4</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q3" id="q3" value="3">
+				<label for="q1">3</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q3" id="q3" value="2">
+				<label for="q1">2</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q3" id="q3" value="1">
+				<label for="q1">1</label><br>
+				</td>
+            </tr>
+  </table>
+         	
+
+
+ <br>
+         <br>
+
+	<table width=950>	<tr>
+            	<td width><b>You are satisfied with the devices you use.</td>
+            </tr></table>		
+
+		<table width="85%">
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q4" id="q4" value="5">
+				<label for="q2">Strongly Agree</label>
+			  </td>
+                <td width="15%">
+				<input type="radio" name="q4" id="q4" value="4">
+				<label for="q2">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q4" id="q4" value="3">
+				<label for="q2">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q4" id="q4" value="2">
+				<label for="q2">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q4" id="q4" value="1">
+				<label for="q2">Strongly Disagree</label><br>
+				</td>
+            </tr>
+  </table>
+
+ <br>
+         <br>
+
+	
+<table width=950><tr>
+            	<td width><b>You plan on upgrading your phone within a few months.</td>
+ </tr></table>		
+<table width="85%">
+            <tr>
+	<td width="15%">
+				<input type="radio" name="q5" id="q5" value="5">
+				<label for="q1">Strongly Agree</label>
+			  </td>
+                <td width="15%">
+				<input type="radio" name="q5" id="q5" value="4">
+				<label for="q1">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q5" id="q5" value="3">
+				<label for="q1">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q5" id="q5" value="2">
+				<label for="q1">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q5" id="q5" value="1">
+				<label for="q1">Strongly Disagree</label><br>
+				</td>
+            </tr>
+  </table>
+    	
+
+ <br>
+         <br>
+	
+	
+	<table width=950>	<tr>
+            	<td width><b>Social networking sites are important aspects of peoples lives. </td>
+            </tr></table>		
+
+		<table width="85%">
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q6" id="q6" value="5">
+				<label for="q2">Strongly Agree</label>
+			  </td>
+                <td width="15%">
+				<input type="radio" name="q6" id="q6" value="4">
+				<label for="q2">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q6" id="q6" value="3">
+				<label for="q2">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q6" id="q6" value="2">
+				<label for="q2">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q6" id="q6" value="1">
+				<label for="q2">Strongly Disagree</label><br>
+				</td>
+            </tr>
+  </table>
+			
+
+ <br>
+         <br>
+	
+<table width=950><tr>
+            	<td width><b>Users are sacrificing privacy by using social media.</td>
+ </tr></table>		
+<table width="85%">
+            <tr>
+	<td width="15%">
+				<input type="radio" name="q7" id="q7" value="5">
+				<label for="q1">Strongly Agree</label>
+			  </td>
+                <td width="15%">
+				<input type="radio" name="q7" id="q7" value="4">
+				<label for="q1">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q7" id="q7" value="3">
+				<label for="q1">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q7" id="q7" value="2">
+				<label for="q1">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q7" id="q7" value="1">
+				<label for="q1">Strongly Disagree</label><br>
+				</td>
+            </tr>
+  </table>
+        	
+ <br>
+         <br>
+
+
+
+	<table width=950>	<tr>
+            	<td width><b>How often does your homework require a computer/internet?</td>
+            </tr></table>		
+
+		<table width="85%">
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q8" id="q8" value="5">
+				<label for="q2">Strongly Agree</label>
+			  </td>
+                <td width="15%">
+				<input type="radio" name="q8" id="q8" value="4">
+				<label for="q2">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q8" id="q8" value="3">
+				<label for="q2">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q8" id="q8" value="2">
+				<label for="q2">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q8" id="q8" value="1">
+				<label for="q2">Strongly Disagree</label><br>
+				</td>
+            </tr>
+  </table>
+  			
+
+ <br>
+         <br>
+
+		
+<table width=950><tr>
+            	<td width><b>Overall, my teachers do a good job of incorporating technology into their lessons</td>
+ </tr></table>		
+<table width="85%">
+            <tr>
+	<td width="15%">
+				<input type="radio" name="q9" id="q9" value="5">
+				<label for="q1">Strongly Agree</label>
+			  </td>
+                <td width="15%">
+				<input type="radio" name="q9" id="q9" value="4">
+				<label for="q1">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q9" id="q9" value="3">
+				<label for="q1">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q9" id="q9" value="2">
+				<label for="q1">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q9" id="q9" value="1">
+				<label for="q1">Strongly Disagree</label><br>
+				</td>
+            </tr>
+  </table>
+     	
+ <p>&nbsp;</p>
+ <p><strong>Do you think computers helps you to:</strong><br>
+ </p>
+ <table width=950>	<tr>
+            	<td width><b>
+           	    <p>Think critically</p></td>
+            </tr></table>		
+
+  <table width="85%">
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q10" id="q10" value="5">
+				<label for="q2">Strongly Agree</label>
+			  </td>
+                <td width="15%">
+				<input type="radio" name="q10" id="q10" value="4">
+				<label for="q2">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q10" id="q10" value="3">
+				<label for="q2">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q10" id="q10" value="2">
+				<label for="q2">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q10" id="q10" value="1">
+				<label for="q2">Strongly Disagree</label><br>
+				</td>
+            </tr>
+  </table>
+  <p>&nbsp;</p>
+  <table width=950>	<tr>
+            	<td width><b>Develop new ways of thinking</td>
+  </tr></table>		
+
+  <table width="85%">
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q11" id="q11" value="5">
+				<label for="q2">Strongly Agree</label>
+			  </td>
+                <td width="15%">
+				<input type="radio" name="q11" id="q11" value="4">
+				<label for="q2">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q11" id="q11" value="3">
+				<label for="q2">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q11" id="q11" value="2">
+				<label for="q2">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q11" id="q11" value="1">
+				<label for="q2">Strongly Disagree</label><br>
+				</td>
+            </tr>
+  </table>
+  <p>&nbsp;</p>
+  <table width=950>	<tr>
+            	<td width><b>Gather and orgnize information</td>
+  </tr></table>		
+
+  <table width="85%">
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q12" id="q12" value="5">
+				<label for="q2">Strongly Agree</label>
+			  </td>
+                <td width="15%">
+				<input type="radio" name="q12" id="q12" value="4">
+				<label for="q2">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q12" id="q12" value="3">
+				<label for="q2">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q12" id="q12" value="2">
+				<label for="q2">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q12" id="q12" value="1">
+				<label for="q2">Strongly Disagree</label><br>
+				</td>
+            </tr>
+  </table>
+  <p>&nbsp;</p>
+  <table width=950>	<tr>
+            	<td width><b>Be more productive</td>
+  </tr></table>		
+
+		<table width="85%">
+		
+            <tr>
+		<td width="15%">
+				<input type="radio" name="q13" id="q13" value="5">
+				<label for="q2">Strongly Agree</label>
+			  </td>
+                <td width="15%">
+				<input type="radio" name="q13" id="q13" value="4">
+				<label for="q2">Agree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q13" id="q13" value="3">
+				<label for="q2">Undecided</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q13" id="q13" value="2">
+				<label for="q2">Disagree</label>
+				</td>
+                <td width="15%">
+				<input type="radio" name="q13" id="q13" value="1">
+				<label for="q2">Strongly Disagree</label><br>
+				</td>
+            </tr>
+  </table>
+   <p>&nbsp;</p>
+   <p><br>
+         <br>
+   </p>
+   <center>
+     <p>
+		    <input type="submit" id="sub-button" name="submit" value="">
+		    &nbsp;&nbsp;&nbsp;
+		    <input type="reset" id="cancelbutton" name="cancel" value="">
+		  </p>
+		  <p>		    <br>
+		    <br>
+	      </p>
+    </center>
+</form>
+<div id ="footer">
+    ©Copyright Arun joshi 2017&nbsp;&nbsp;&nbsp;
+    </div>
+</body>
+</html>
